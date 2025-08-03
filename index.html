@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Expenses chart component</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>My balance</h1>
+          <p>$921.48</p>
+        </div>
+        <img src="images/logo.svg" alt="Company logo" />
+      </header>
+      <article>
+        <section class="spending">
+          <h2>Spending - Last 7 days</h2>
+          <!-- Bar charts -->
+          <div class="spending__barchart">
+            <div class="spending__barchart-item">
+              <div class="amount">$17.45</div>
+              <div class="bar monday"></div>
+              <p>mon</p>
+            </div>
+            <div class="spending__barchart-item">
+              <div class="amount">$34.91</div>
+              <div class="bar tuesday"></div>
+              <p>tue</p>
+            </div>
+            <div class="spending__barchart-item">
+              <div class="amount">$52.36</div>
+              <div class="bar wednesday"></div>
+              <p>wed</p>
+            </div>
+            <div class="spending__barchart-item">
+              <div class="amount">$31.07</div>
+              <div class="bar thursday"></div>
+              <p>thu</p>
+            </div>
+            <div class="spending__barchart-item">
+              <div class="amount">$23.39</div>
+              <div class="bar friday"></div>
+              <p>fri</p>
+            </div>
+            <div class="spending__barchart-item">
+              <div class="amount">$43.38</div>
+              <div class="bar saturday"></div>
+              <p>sat</p>
+            </div>
+            <div class="spending__barchart-item">
+              <div class="amount">$25.48</div>
+              <div class="bar sunday"></div>
+              <p>sun</p>
+            </div>
+          </div>
+        </section>
+        <section class="thisMonth">
+          <!-- Content -->
+          <div class="thisMonth__data">
+            <h2>Total this month</h2>
+            <p>$478.33</p>
+          </div>
+          <!-- Previous Month comparison -->
+          <div class="thisMonth__comparison">
+            <div>+2.4%</div>
+            <span>from last month</span>
+          </div>
+        </section>
+      </article>
+    </main>
+    <!-- My balance
+  $921.48
+
+  Spending - Last 7 days
+
+  mon
+  tue
+  wed
+  thu
+  fri
+  sat
+  sun
+
+  Total this month
+  $478.33
+
+  +2.4%
+  from last month
+   -->
+  </body>
+</html>
